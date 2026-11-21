@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display-bn: 'Noto Serif Bengali', 'Hind Siliguri', serif;
+    --font-body-bn: 'Hind Siliguri', 'Noto Serif Bengali', sans-serif;
+    --font-display-en: 'Cormorant Garamond', Georgia, serif;
+    --font-arabic: 'Amiri', serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-body-bn);
+  }
+}
+
+.font-display-bn {
+  font-family: var(--font-display-bn);
+}
+
+.font-display-en {
+  font-family: var(--font-display-en);
+}
+
+.font-arabic {
+  font-family: var(--font-arabic);
+}
+
+@keyframes gentle-sway {
+  0%, 100% {
+    transform: rotate(-0.7deg);
+  }
+  50% {
+    transform: rotate(0.7deg);
+  }
+}
+
+.animate-hanging-sway {
+  transform-origin: top center;
+  animation: gentle-sway 6s ease-in-out infinite;
+}
+
+@keyframes wheel-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-wheel {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: wheel-spin 1.8s linear infinite;
+}
+
+@keyframes eq-bar {
+  0%, 100% {
+    transform: scaleY(0.35);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.animate-eq-1 {
+  animation: eq-bar 0.7s ease-in-out infinite;
+}
+.animate-eq-2 {
+  animation: eq-bar 0.55s ease-in-out 0.15s infinite;
+}
+.animate-eq-3 {
+  animation: eq-bar 0.8s ease-in-out 0.3s infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-hanging-sway,
+  .animate-wheel,
+  .animate-eq-1,
+  .animate-eq-2,
+  .animate-eq-3 {
+    animation: none;
+  }
+}

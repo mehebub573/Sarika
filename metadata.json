@@ -1,0 +1,6 @@
+{
+  "name": "মেহেবুব ও সারিকা — শুভ বিবাহ | Mehebub & Sarika Wedding",
+  "description": "মেহেবুব ও সারিকার শুভ বিবাহের ইন্টারঅ্যাক্টিভ ডিজিটাল আমন্ত্রণপত্র — ৩০ মার্চ ২০৩০। অনুষ্ঠানসূচি, কাউন্টডাউন, ফটো গ্যালারি, লোকেশন ম্যাপ, মিউজিক প্লেয়ার ও আরএসভিপি।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
